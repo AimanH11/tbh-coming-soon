@@ -21,19 +21,11 @@ function App() {
 
   return (
     <div className="tbh-hero-bg">
-      {/* Logo image centered at the top, no veil */}
-      <img src="/3 3.png" alt="TBH - The Brand Humans" className="tbh-logo-img" />
       {/* Main Centered Content */}
       <div className="tbh-hero-center">
-        {/* Headline */}
-        <motion.h1
-          className="tbh-hero-headline"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-        >
-          COMING SOON
-        </motion.h1>
+
+      <img src="/3 3.png" alt="TBH - The Brand Humans" className="tbh-logo-img" />  
+       
         {/* Animated Underline */}
         <motion.div
           className="tbh-hero-underline"
@@ -41,6 +33,15 @@ function App() {
           animate={{ scaleX: 1 }}
           transition={{ delay: 0.5, duration: 1, type: 'spring' }}
         />
+        {/* Glassy Launch Badge */}
+        <motion.div
+          className="tbh-glass-launch-badge"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          Site launching soon.
+        </motion.div>
         {/* Subheadline */}
         <motion.p
           className="tbh-hero-subheadline"
@@ -48,8 +49,18 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          We build personal brands for founders, CEOs & VCs through strategy, content & storytelling.<br />Site launching soon.<br />You lead the company. We build the brand behind it—you.
+          We build personal brands for founders, CEOs & VCs through strategy, content & storytelling.<br />
+          You lead the company. We build the brand behind it—you.
         </motion.p>
+         {/* Headline */}
+         <motion.h1
+          className="tbh-hero-headline"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        >
+          COMING SOON
+        </motion.h1>
         {/* Email Signup */}
         <motion.div
           className="tbh-hero-email-signup"
